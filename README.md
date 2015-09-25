@@ -18,8 +18,8 @@ será MySQL.
 
 Links de referencias sobre o projeto:
 
-(https://perl.org)[Perl] - Referências e documentação da linguagem
-(http://www.catalystframework.org/)[Catalyst] - Framework Web MVC para Perl
-(http://www.template-toolkit.org/docs/index.html)[Template::Toolkit] - Documentação sobre template toolkit com Perl
-(http://dev.mysql.com/doc/refman/5.6/en/index.html)[MySQL] - Documentação Introdutória ao MySQL
-(https://git-scm.com/book/en/v1/Getting-Started)[Git] - Guia de iniciação no Git.
+[Perl](https://perl.org) - Referências e documentação da linguagem
+[Catalyst](http://www.catalystframework.org/) - Framework Web MVC para Perl
+[Template::Toolkit](http://www.template-toolkit.org/docs/index.html) - Documentação sobre template toolkit com Perl
+[MySQL](http://dev.mysql.com/doc/refman/5.6/en/index.html) - Documentação Introdutória ao MySQL
+[Git](https://git-scm.com/book/en/v1/Getting-Started) - Guia de iniciação no Git.
