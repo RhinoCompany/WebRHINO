@@ -12,7 +12,21 @@ aniversariantes, etc.
 * Controle de beneficios ( VR, VA, VT, PLR, etc.)
 * entre outros e mudanças ocasionais.
 
-### Técnologias
+### Tecnologias
 
 O sistema será desenvolvido utilizando a linguagem de programação Perl, com FrameWork Web Catalyst, 
 HTML, Java Script e Banco de Dados MySQL.
+
+A hub de testes será o sistema de integração continua [Travis](https://travis-ci.org).
+
+O Sistema de controle de versões será o GitHub.
+
+### Metodologia de Desenvolvimento
+
+Inicialmente pretendemos utilizar a metodologia de desenvolvimento de softwares Extreme Programming - XP
+
+### Equipe de Desenvolvimento do Projeto
+
+* Felipe Rafael
+* Fernando Soares
+* Italo Gonçales
