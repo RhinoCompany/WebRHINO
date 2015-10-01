@@ -22,7 +22,7 @@ Links de referencias sobre o projeto:
 
 [Perl](https://perl.org) - Referências e documentação da linguagem
 
-[Catalyst](http://www.catalystframework.org/) - Framework Web MVC para Perl
+[Catalyst](http://search.cpan.org/~ether/Catalyst-Manual-5.9009/lib/Catalyst/Manual/Tutorial.pod) - Framework Web MVC para Perl
 
 [Template::Toolkit](http://www.template-toolkit.org/docs/index.html) - Documentação sobre template toolkit com Perl
 
