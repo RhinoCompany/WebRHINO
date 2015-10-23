@@ -12,7 +12,7 @@ install:
   - cpanm --quiet --notest --skip-satisfied Catalyst::Runtime 
   - export RELEASE_TESTING=1 AUTOMATED_TESTING=1 AUTHOR_TESTING=1 HARNESS_OPTIONS=j10:c HARNESS_TIMER=1 DBIC_TRACE=1
 script:
-  - perl Makefile.PL
+  - perl Makefile.PL && make test
 notifications:
   email:
     - italo.goncales@gmail.com
