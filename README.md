@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ItaloGoncales/WebRHINO.svg)](https://travis-ci.org/ItaloGoncales/WebRHINO)
+[![Build Status](https://travis-ci.org/saxsoares/WebRHINO.svg)](https://travis-ci.org/saxsoares/WebRHINO)
 ## WebRHINO - Sistema de RH
  
 Este é um projeto da Universidade Federal de São Paulo,
