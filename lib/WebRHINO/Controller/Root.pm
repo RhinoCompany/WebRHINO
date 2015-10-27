@@ -1,6 +1,7 @@
 package WebRHINO::Controller::Root;
 use Moose;
 use namespace::autoclean;
+use utf8;
 
 BEGIN { extends 'Catalyst::Controller' }
 
@@ -28,11 +29,27 @@ The root page (/)
 
 =cut
 
-sub index :Path :Args(0) {
+sub index :Path :Args(0) :ActionClass('REST') { }
+
+sub index_GET {
     my ( $self, $c ) = @_;
 
-    # Hello World
-    $c->response->body( $c->welcome_message );
+    $c->stash({
+    	message => "Esta é uma mensagem demonstrativa do GET do controller Root.",
+        template => 'get.tt',
+    });
+}
+
+sub index_POST {
+    my ( $self, $c ) = @_;
+
+    my $name = $c->req->param('sender');
+
+    $c->stash({
+       message => "Esta é uma mensagem demonstrativa do POST do controller Root.",
+       AppName => $name,
+       template => 'post.tt',
+    });
 }
 
 =head2 default
