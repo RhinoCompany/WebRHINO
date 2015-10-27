@@ -1,0 +1,21 @@
+<DOCTYPE HTML>
+<html>
+    <head>
+        <title>Bem vindo ao WebRHINO</title>
+    </head>
+    <body>
+        <h1>Bem vindo!</h1>
+        <span>"Este é a primeira pagina do sistema de RH online Web RHINO. Por enquanto,
+            esta pagina é apenas demonstrativa, para todos verem e aprenderem como funciona 
+            a parte de view e de ActionClass ( GET/POST/HEAD/DELETE/. . . ) do Catalyst."</span>
+        <br/>
+        <p>Para não perder o costume, uma mensagem que veio diretamente do servidor: <b>[% message %]</b></p>
+
+        <p>E olha que legal, a pagina anterior mandou uma mensagem ao servidor, que enviou para cá: <h3>[% AppName %]</h3></p>
+
+        <form method="GET">
+            <label for="sender">Para ir para a página do GET, clique abaixo:</label><br/>
+            <input type="submit" name="sender" value="Voltar">
+        </form>
+    </body>
+</html>
