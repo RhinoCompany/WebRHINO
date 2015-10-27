@@ -28,5 +28,5 @@ Inicialmente pretendemos utilizar a metodologia de desenvolvimento de softwares 
 ### Equipe de Desenvolvimento do Projeto
 
 * Felipe Rafael
-* Fernando Soares
+* Fernando B. Soares
 * Italo Gonçales
