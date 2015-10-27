@@ -30,3 +30,5 @@ Links de referencias sobre o projeto:
 [MySQL](http://dev.mysql.com/doc/refman/5.6/en/index.html) - Documentação Introdutória ao MySQL
 
 [Git](https://git-scm.com/book/en/v1/Getting-Started) - Guia de iniciação no Git.
+
+[Sync](https://help.github.com/articles/syncing-a-fork/) - Sincronizando seu fork com o Repositório original.
