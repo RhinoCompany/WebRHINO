@@ -19,6 +19,8 @@ requires 'namespace::autoclean';
 # Extra Modules are below
 requires 'Catalyst::View::TT';
 requires 'Catalyst::Model::DBIC::Schema';
+requires 'Catalyst::Action::REST';
+requires 'DBIx::Class::PassphraseColumn';
 
 requires 'Config::General'; # This should reflect the config file format you've chosen
                  # See Catalyst::Plugin::ConfigLoader for supported formats

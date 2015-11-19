@@ -108,10 +108,50 @@ __PACKAGE__->add_columns(
 
 __PACKAGE__->set_primary_key("uid");
 
+=head1 RELATIONS
 
-# Created by DBIx::Class::Schema::Loader v0.07043 @ 2015-10-27 17:50:28
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:etRotqr0mYFQLBTff6tZhg
+=head2 user_roles
 
+Type: has_many
+
+Related object: L<WebRHINO::Schema::Result::UserRole>
+
+=cut
+
+__PACKAGE__->has_many(
+  "user_roles",
+  "WebRHINO::Schema::Result::UserRole",
+  { "foreign.uid" => "self.uid" },
+  { cascade_copy => 0, cascade_delete => 0 },
+);
+
+=head2 rids
+
+Type: many_to_many
+
+Composing rels: L</user_roles> -> rid
+
+=cut
+
+__PACKAGE__->many_to_many("rids", "user_roles", "rid");
+
+
+# Created by DBIx::Class::Schema::Loader v0.07043 @ 2015-11-16 17:25:00
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:R5BOrRpeBNBPFeEC5/rsCw
+
+__PACKAGE__->load_components(qw(PassphraseColumn));
+
+__PACKAGE__->add_columns(
+    'password' => {
+        passphrase       => 'rfc2307',
+        passphrase_class => 'SaltedDigest',
+        passphrase_args  => {
+            algorithm   => 'SHA-1',
+            salt_random => 20.
+        },
+        passphrase_check_method => 'check_password',
+    },
+);
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration
 __PACKAGE__->meta->make_immutable;

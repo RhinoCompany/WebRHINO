@@ -7,9 +7,9 @@ __PACKAGE__->config(
     schema_class => 'WebRHINO::Schema',
     
     connect_info => {
-        dsn => 'dbi:mysql:',
-        user => '',
-        password => '',
+        dsn => 'dbi:mysql:rhino',
+        user => 'pinky',
+        password => 'OngoBongoMaktub-999',
     }
 );
 
