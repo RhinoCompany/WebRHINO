@@ -14,8 +14,8 @@
         <p>E olha que legal, a pagina anterior mandou uma mensagem ao servidor, que enviou para cá: <h3>[% AppName %]</h3></p>
 
         <form method="GET">
-            <label for="sender">Para ir para a página do GET, clique abaixo:</label><br/>
-            <input type="submit" name="sender" value="Voltar">
+            <label for="back">Para ir para a página do GET, clique abaixo:</label><br/>
+            <input type="submit" name="back" value="Voltar">
         </form>
     </body>
 </html>
