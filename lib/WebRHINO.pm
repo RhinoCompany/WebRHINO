@@ -20,6 +20,13 @@ use Catalyst qw/
     -Debug
     ConfigLoader
     Static::Simple
+
+    Authentication
+    Authorization::Roles
+
+    Session
+    Session::Store::File
+    Session::State::Cookie 
 /;
 
 extends 'Catalyst';
@@ -41,6 +48,19 @@ __PACKAGE__->config(
     disable_component_resolution_regex_fallback => 1,
     enable_catalyst_header => 1, # Send X-Catalyst header
     ENCODING => 'utf-8',
+);
+
+__PACKAGE__->config (
+    'Plugin::Authentication' => {
+        default => {
+            class              => 'SimpleDB',
+            user_model         => 'Rhino::User',
+            password_type      => 'self_check',
+            #password_field     => 'password',
+            #password_type      => 'hashed',
+            #password_hash_type => 'SHA-1',
+        },
+    },
 );
 
 # Start the application

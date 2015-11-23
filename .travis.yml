@@ -9,9 +9,11 @@ before_install:
   - cpan o conf init
   - cpanm CPAN::Uploader
 install:
-  - cpanm --quiet --notest --skip-satisfied Catalyst::Runtime Catalyst::Devel Module::Install::Catalyst 
+  - cpanm --quiet --notest --skip-satisfied Catalyst::Runtime Module::Install::Catalyst 
   - cpanm --quiet --notest --skip-satisfied Catalyst::Model::DBIC::Schema Catalyst::View::TT MooseX::NonMoose
-  - cpanm --quiet --notest --skip-satisfied Catalyst::Action::REST
+  - cpanm --quiet --notest --skip-satisfied Catalyst::Action::REST Catalyst::Plugin::Session::State::Cookie
+  - cpanm --quiet --notest --skip-satisfied Catalyst::Plugin::Session::Store::File DBIx::Class::PassphraseColumn
+  - cpanm --quiet --notest --skip-satisfied Catalyst::Plugin::Authentication Catalyst::Plugin::Authorization::Roles
   - export RELEASE_TESTING=1 AUTOMATED_TESTING=1 AUTHOR_TESTING=1 HARNESS_OPTIONS=j10:c HARNESS_TIMER=1 DBIC_TRACE=1
 script:
   - perl Makefile.PL && make test

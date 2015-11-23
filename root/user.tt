@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <div>
+            <table>
+                <thead>
+                    <th>Nome:</th>
+                    <th>Sobrenome:</th>
+                    <th>Login:</th>
+                    <th>Cliente:</th>
+                    <th>Email:</th>
+                    <th>Status:</th>
+                    <th colspan="3">Permissões</th>
+                </thead>
+                [% FOREACH user IN users %]
+                <tr>
+                    <form method="POST">
+                        <td><input type="input" name="first_name" value="[% user.first_name %]" />
+                            <input type="hidden" name="userid" value="[% user.uid %]" /></td>
+                        <td><input type="input" name="last_name" value="[% user.last_name %]" /></td>
+                        <td><input type="input" name="username" value="[% user.username %]" /></td>
+                        <td><input type="input" name="customer" value="[% user.customerid.name %]" />
+                            <input type="hidden" name="customerid" value="[% user.customerid.customerid %]" /></td>
+                        <td><input type="input" name="email" value="[% user.email %]" /></td>
+                        <td><input type="input" name="active" value="[% user.active %]" /></td>
+                            <td><div>
+                            [% FOREACH role IN roles %]
+                                [% IF user.has_role(role.role) %]
+                                <input type="checkbox" name="role" value="[% role.roleid %]" checked /> [% role.role %]
+                                [% ELSE %]
+                                <input type="checkbox" name="role" value="[% role.roleid %]" /> [% role.role %]
+                                [% END %]
+                            [% END %]
+                            </div></td>
+                        <td><input type="submit" value="Alterar" /></td>
+                    </form>
+                </tr>
+                [% END %]
+            </table><br/>
+            <table>
+            <thead><th colspan="5">Cadastro de Novo usuário</th></thead>
+            <thead>
+                <th>Nome:</th>
+                <th>Sobrenome:</th>
+                <th>Login:</th>
+                <th>Cliente:</th>
+                <th>Email:</th>
+                <th colspan="3">Permissões</th>
+            </thead>
+            <tr>
+                <form method="POST" action="/admin/newuser">
+                    <td><input type="input" name="first_name" /></td>
+                    <td><input type="input" name="last_name" /></td>
+                    <td><input type="input" name="username" /></td>
+                    <td><input type="input" name="customer" /></td>
+                    <td><input type="input" name="email" /></td>
+                    <td><div>
+                    [% FOREACH role IN roles %]
+                        <input type="checkbox" name="role" value="[% role.roleid %]" /> [% role.role %]
+                    [% END %]
+                    </div></td>
+                    <td><input type="submit" value="Alterar" /></td>
+                </form>
+            </table>
+            </tr>
+        </div>
+    </body>
+</html>
