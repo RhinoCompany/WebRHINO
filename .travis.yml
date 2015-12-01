@@ -6,6 +6,9 @@ perl:
   - "5.12"
 services:
   - mysql
+addons:
+  hosts:
+  - 188.166.56.30 rhino_data
 env: PERL_MM_USE_DEFAULT=1
 before_install:
   - cpan o conf init
