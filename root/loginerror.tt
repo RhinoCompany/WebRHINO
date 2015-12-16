@@ -1,0 +1,22 @@
+<!doctype html>
+<head>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+	<div id="container">
+		
+		<form  action="/logout" >
+	
+                        <h1 id="message">[% message %]</h1>
+			<div id="lower">
+				<input type="submit" value="OK">
+			</div>
+		</form>
+	
+		
+	</div>
+	
+</body>
+</html>

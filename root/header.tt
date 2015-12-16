@@ -1,10 +1,17 @@
-<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+<!--[if IE]>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<![endif]-->
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/drop-down.css">
+<link rel="stylesheet" href="/css/offcanvas.css">
+<link rel="stylesheet" href="/css/dashboard.css">
+<link rel="stylesheet" href="/css/app-local.css">
 
-<link rel="icon" href="/img/favicon.ico">
+<script type="text/javascript" language="javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="/js/bootstrap.js"></script>
+<script type="text/javascript" language="javascript" src="/js/web-upload.js"></script>
+<script type="text/javascript" language="javascript" src="/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="/js/dataTables.bootstrap.min.js"></script>
 
-<link href="/css/bootstrap.css" rel="stylesheet">
-
-<script src="/js/jquery.js"></script>
-<script src="/js/bootstrap.js"></script>
-
+<title>WebRHINO RH Online</title>

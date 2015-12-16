@@ -1,0 +1,9 @@
+.bordered {
+    border: 1px solid rgba(86,61,124,.2);
+}
+
+.vertical-center {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}

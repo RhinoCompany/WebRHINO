@@ -71,8 +71,7 @@ sub index_GET {
     my ( $self, $c ) = @_;
 
     $c->stash({
-    	message => "Esta é uma mensagem demonstrativa do GET do controller Root.",
-        template => 'get.tt',
+        template => 'index.tt',
     });
 }
 
