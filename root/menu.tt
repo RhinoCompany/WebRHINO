@@ -8,7 +8,14 @@
         <ul class="nav navbar-nav">
         <li><a href="/">Inicio</a></li>
         [% IF c.check_user_roles('Admin') %]
-        <li><a href="/">Administração</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuários<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="/admin/user/new">Novo</a></li>
+            </ul>
+        </li>
+        [% ELSE %]
+           <li><a href="/login/signup">Entrar</a></li>
 	[% END %]
         </ul>
         <ul class="nav navbar-nav navbar-right">
