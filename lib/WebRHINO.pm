@@ -21,6 +21,9 @@ use Catalyst qw/
     ConfigLoader
     Static::Simple
 
+    Session::Store::FastMmap
+    StatusMessage
+
     Authentication
     Authorization::Roles
 
@@ -48,6 +51,7 @@ __PACKAGE__->config(
     disable_component_resolution_regex_fallback => 1,
     enable_catalyst_header => 1, # Send X-Catalyst header
     ENCODING => 'utf-8',
+    default_view => 'HTML',
 );
 
 __PACKAGE__->config (

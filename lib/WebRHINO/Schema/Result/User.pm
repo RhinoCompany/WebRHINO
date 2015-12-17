@@ -121,23 +121,23 @@ Related object: L<WebRHINO::Schema::Result::UserRole>
 __PACKAGE__->has_many(
   "user_roles",
   "WebRHINO::Schema::Result::UserRole",
-  { "foreign.uid" => "self.uid" },
+  { "foreign.user_id" => "self.uid" },
   { cascade_copy => 0, cascade_delete => 0 },
 );
 
-=head2 rids
+=head2 roles
 
 Type: many_to_many
 
-Composing rels: L</user_roles> -> rid
+Composing rels: L</user_roles> -> role
 
 =cut
 
-__PACKAGE__->many_to_many("rids", "user_roles", "rid");
+__PACKAGE__->many_to_many("roles", "user_roles", "role");
 
 
-# Created by DBIx::Class::Schema::Loader v0.07043 @ 2015-11-16 17:25:00
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:R5BOrRpeBNBPFeEC5/rsCw
+# Created by DBIx::Class::Schema::Loader v0.07043 @ 2015-12-17 17:38:58
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:bRmT3aFOnQHu3/K96mwXbw
 
 __PACKAGE__->load_components(qw(PassphraseColumn));
 

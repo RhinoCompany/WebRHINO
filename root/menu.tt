@@ -7,6 +7,9 @@
     <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
         <li><a href="/">Inicio</a></li>
+        [% IF c.check_user_roles('Admin') %]
+        <li><a href="/">Administração</a></li>
+	[% END %]
         </ul>
         <ul class="nav navbar-nav navbar-right">
         [% IF c.user %]
