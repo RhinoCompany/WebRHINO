@@ -1,21 +1,28 @@
 <div class="row row-offcanvas row-offcanvas-right">
 <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
+            <li class="active"><a href="#">Perfil <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Férias</a></li>
+            <li><a href="#">Faltas</a></li>
+            <li><a href="#">Benefícios</a></li>
           </ul>
           <ul class="nav nav-sidebar">
-            <li><a href="">Nav item</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
+            <li><a href="">Minha Área</a></li>
+            <li><a href="">Holerites</a></li>
+            <li><a href="">Contrato</a></li>
+            <li><a href="">Manual do Funcionário</a></li>
+            <li><a href="">Regras 5S</a></li>
           </ul>
           <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
+            <li><a href="">Registro de Acidentes</a></li>
+            <li><a href="">CIPA</a></li>
+            <li><a href="">Sugestões</a></li>
           </ul>
+          [% IF c.check_user_roles('Admin') %]
+          <ul class="nav nav-sidebar">
+            <li><a href="">Projetos</a></li>
+            <li><a href="">Pesquisa de Clima</a></li>
+            <li><a href="">Salários   </a></li>
+          </ul>
+          [% END %]
         </div>

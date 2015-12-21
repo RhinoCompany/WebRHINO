@@ -14,34 +14,42 @@
           </p>
           <div class="row">
             <div class="col-xs-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+              <h2>Missão da Empresa</h2>
+              <p>Vender móveis de qualidade, com rapidez, levando conforto e preço acessível com o máximo de organização.</p>
+              <p><a class="btn btn-default" href="#" role="button">Ver Mais »</a></p>
             </div><!--/.col-xs-6.col-lg-4-->
             <div class="col-xs-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+              <h2>Palestra do dia</h2>
+              <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="//www.youtube.com/embed/eITOWoAt4-I" allowfullscreen=""></iframe> </div>
             </div><!--/.col-xs-6.col-lg-4-->
             <div class="col-xs-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+              <h2>Notícias </h2>
+              <img src="/img/wood-compost.jpg" alt="composto de madeira" class="img-rounded">
+              <p>Novo composto de madeira para móveis de áreas externas </p>
+              <p><a class="btn btn-default" href="/news" role="button">Ver Notícia »</a></p>
             </div><!--/.col-xs-6.col-lg-4-->
             <div class="col-xs-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+              <h2>Aniversariantes</h2>
+              <p>21/12 - Fernando Soares</p>
+              <p>23/12 - Felipe Rafael</p>
+              <p>25/12 - Jesus Cristo</p>
+              <p><a class="btn btn-default" href="#" role="button">Ver Todos »</a></p>
             </div><!--/.col-xs-6.col-lg-4-->
             <div class="col-xs-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+              <h2>Eventos </h2>
+              <p>21/12 - Apresentação do Trabalho</p>
+              <p>22/12 - Confraternização</p>
+              <p>24/12 - Recesso Natal</p>
+              <p>31/12 - Recesso Ano Novo</p>
+              <p><a class="btn btn-default" href="#" role="button">Ver Eventos »</a></p>
             </div><!--/.col-xs-6.col-lg-4-->
             <div class="col-xs-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+              <h2>GitHub</h2>
+              <a href="https://github.com/RhinoCompany/WebRHINO" class="thumbnail">
+                <img src="/img/octocat.jpg" alt="Octocat">
+              </a>
+              <h3 class="text-center">WebRHINO - RH Online</h3>
+              <p><a class="btn btn-default" href="https://github.com/RhinoCompany/WebRHINO" role="button">Ver no GitHub »</a></p>
             </div><!--/.col-xs-6.col-lg-4-->
           </div><!--/row-->
         </div><!--/.col-xs-12.col-sm-9-->

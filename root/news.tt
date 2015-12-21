@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    [% INCLUDE header.tt %]
+</head>
+<body>
+    [% INCLUDE menu.tt %]
+    <div class="container">
+        [% INCLUDE sidemenu.tt %]
+        <div class="col-sm-6 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <p class="pull-right visible-xs">
+              <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Menu</button>
+            </p>
+            <div class="row">
+                <div class="col-sm-12 blog-main">
+
+                    <div class="blog-post">
+                        <h2 class="blog-post-title">Novo composto de madeira para móveis de áreas externas</h2>
+                        <p class="blog-post-meta">21 Dezembro, 2015 por <a href="#">Marcos - RH</a></p>
+
+                        <p>Os polímeros a base de madeira (WPCs na sigla em inglês) poupam recursos e são uma das tendências mais recentes de material para móveis de jardim e outros usos externos, especialmente piso de varandas, fachadas e cercas. Como parte do programa LIMWOOD, financiado pela União Europeia, pesquisadores do Instituto Fraunhofer (Wilhelm-Klauditz-Institut ou WKI) de pesquisas em madeira estão colaborando com parceiros na indústria em países como Bélgica, Espanha, França e Alemanha para desenvolver materiais que possam ser prensados em tábuas de compensado resistentes à água para a confecção de móveis para interiores.</p>
+                        <hr>
+                        <p>Essas tábuas são compostas por cerca de 60% de partículas de madeira e 40% de material termoplástico – geralmente polipropileno e polietileno, e tanto a madeira quanto os plásticos podem ser conseguidos da reciclagem de outros produtos. A madeira desses polímeros pode ser ainda substituída por qualquer fonte de lignocelulose derivada das partes fibrosas de plantas como cânhamo ou algodão, ou o sabugo de grãos como arroz ou flores de girassol. Todos esses materiais são 100% recicláveis. Além disso, as tábuas de polímero prensado produzidas pelos pesquisadores do WKI são livres de formaldeído. “A questão controversa da emissão de formaldeído por causa do condensador usado em madeira prensada comum, não é mais problema”, diz o Dr. Arne Schirp, um dos pesquisadores do instituto. 
+                        <br/>
+                        Testes apontam mais tolerância a chamas e água </p>
+                        <blockquote>
+                        <p>Ao escolher os aditivos certos, os cientistas conseguiram incrementar as propriedades anti-fogo dos compostos à base de madeira. A fórmula foi inicialmente desenvolvida em laboratório usando anti-inflamáveis disponíveis no mercado e livres de halogênios, que foram adicionados ao polímero de madeira durante a etapa em que o produto estava maleável. O primeiro passo envolveu limitar o índice de oxigênio do item a ser testado: esse parâmetro define o comportamento de plásticos ou combinados de madeira e plástico quando expostos a chamas. Ele representa a concentração mínima de oxigênio necessária para que o material continue queimando após ser incendiado. Quanto maior esse número, menos risco de o material pegar fogo. </p>
+                        </blockquote>
+                        <p>O Dr. Schirp e sua equipe conseguirem os melhores resultados com uma combinação de retardantes de chamas como fósforo vermelho e grafite expandido. O limite de oxigenação das tábuas de WPC tratadas com esses componentes aumentou para até 38%, contanto que as partículas de madeira na mistura também fossem á prova de fogo. Para fins de comparação, o limite de oxigênio para a madeira comum de construção é de 27% e o de uma tábua de WPC sem tratamento é de apenas 19%. Mesmo em testes com apenas um foco de chama, nos quais um maçarico de Bunsen era apontado para a superfície de teste, as tábuas que receberam tratamento químico apresentaram alta resistência ao fogo. Em contraste, as amostras de madeira maciça e WPC sem tratamento incendiaram imediatamente e continuaram queimando. </p>
+                        <p>Outra particularidade desse composto de Madeira quimicamente tratado é que ele absorve muito pouca água, o que o torna apropriado para banheiros e cozinhas. Mesmo após ser mergulhado em água fervendo por cinco horas, o materiais emergiu intacto, enquanto outras placas de compensado comum foram completamente destruídas com esse tente. A única limitação no uso do WPC tratado é a instabilidade sob peso localizado. Mas mesmo nesse caso, foi possível aumentar a resistência do material para muito além dos compensados comuns ao acrescentar outros componentes à mistura. </p>
+                        <p>Polímeros à base de madeira podem ser produzidos de diversas formas. Os processos mais comuns são os de injeção e extrusão, nos quais os vários compostos – fibras de madeira, materiais termoplásticos e aditivos – são derretidos sob alta pressão e “forjados” em um molde contínuo. A equipe do Dr. Arne Schirp enfatizou a tecnologia de prensagem, pois é o melhor método para produzir tábuas usadas na construção de móveis. “O compensado resultante tem a mesma aparência visual de produtos em madeira e pode ser colado ou parafusado para criar peças atraentes. O material é adequado para qualquer mobília ou peça decorativa que não suporte muito peso”, descreve o pesquisador. Mas há muitas outras aplicações para os polímeros de madeira, incluindo fachadas, construção de estandes e instalações para interiores de casas e navios.</p>
+                        <p>Através desse trabalho de desenvolvimento, os parceiros do projeto LIMWOOD buscam preencher o vácuo entre os mercados moveleiros de alto padrão e o mais acessível, onde, por um lado se usa madeiras nobres, algo pouco sensatos do ponto de vista ecológico, e, do outro, as peças são confeccionadas a partir de compensado mais barato, geralmente com formaldeído na composição. Os pesquisadores do WKI irão apresentar seus protótipos do WPC resistente a chamas na feira do setor moveleiro Interzum, na cidade de Colônia, entre os dias 5 e 8 de maio do ano que vem.</p>
+                        
+                        <p>(com informações do Science Daily)</p>
+                    </div><!-- /.blog-post -->
+
+                    <div class="blog-post">
+                        <h2 class="blog-post-title">Noticia sobre Eventos</h2>
+                        <p class="blog-post-meta">19 de Dezembro, 2015 por <a href="#">Rafaela - RH</a></p>
+
+                        <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+                        <blockquote>
+                        <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        </blockquote>
+                        <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                    </div><!-- /.blog-post -->
+
+                    <nav>
+                    <ul class="pager">
+                    <li><a href="#">Próximo</a></li>
+                    <li><a href="#">Anterior</a></li>
+                    </ul>
+                    </nav>
+
+                </div><!-- /.blog-main -->
+            </div>   
+        </div>  
+        <div class="col-sm-3 blog-sidebar">
+            <div class="sidebar-module">
+                <h4>Arquivos</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#">Dezembro 2015</a></li>
+                    <li><a href="#">Março 2015</a></li>
+                    <li><a href="#">Fevereiro 2015</a></li>
+                    <li><a href="#">Janeiro 2015</a></li>
+                    <li><a href="#">Dezembro 2013</a></li>
+                    <li><a href="#">Novembro 2013</a></li>
+                    <li><a href="#">Outubro 2013</a></li>
+                    <li><a href="#">Setembro 2013</a></li>
+                    <li><a href="#">Agosto 2013</a></li>
+                    <li><a href="#">Julho 2013</a></li>
+                    <li><a href="#">Junho 2013</a></li>
+                    <li><a href="#">Maio 2013</a></li>
+                    <li><a href="#">Abril 2013</a></li>
+                </ol>
+            </div>
+        </div><!-- /.blog-sidebar -->
+    </div>
+</body>
+</html>
