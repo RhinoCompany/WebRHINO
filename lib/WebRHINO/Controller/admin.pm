@@ -17,17 +17,16 @@ Catalyst Controller.
 =cut
 
 
-=head2 index
-
-=cut
-
-sub index :Path :Args(0) {
+sub auto :Private {
     my ( $self, $c ) = @_;
+    
+    if ( !$c->check_user_roles('Admin') ){
+        $c->response->redirect( '/' );
+        return 0;
+    }
 
-    $c->response->body('Matched WebRHINO::Controller::admin in admin.');
+    return 1;
 }
-
-
 
 =encoding utf8
 

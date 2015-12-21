@@ -11,7 +11,7 @@
         <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuários<span class="caret"></span></a>
             <ul class="dropdown-menu">
-            <li><a href="/admin/user/new">Novo</a></li>
+            <li><a href="/admin/user/add">Novo</a></li>
             </ul>
         </li>
         [% ELSE %]

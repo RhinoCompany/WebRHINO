@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    [% INCLUDE header.tt %]
+</head>
+<body>
+    [% INCLUDE menu.tt %]
+    <div class="container">
+        [% INCLUDE sidemenu.tt %]
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <p class="pull-right visible-xs">
+              <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Menu</button>
+            </p>
+            <div class="row">
+                <h3 class="sub-header">Novo Usuário</h3>
+                [% IF error %]
+                <div class="alert alert-danger alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"    >&times;</span></button>
+                    <p>[% error %]</p>
+                </div>
+                [% END %]
+                [% IF success %]
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true"    >&times;</span></button>
+                    <p>[% success %]</p>
+                </div>
+                [% END %]
+                <form method="POST" action="/admin/user/add">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <label class="control-label" for="fname">Primeiro Nome</label>
+                            <input type="text" class="form-control" name="fname" placeholder="Ex: Milton" />
+                        </div>
+                        <div class="col-md-5">
+                            <label class="control-label" for="lname">Último Nome</label>
+                            <input type="text" class="form-control" name="lname" placeholder="Ex: Nascimento" />
+                        </div>
+                    </div><br/>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <label class="control-label" for="uname">Nome de Usuário</label>
+                            <input type="text" class="form-control" name="uname" placeholder="Ex: milton.nascimento" />
+                        </div>
+                        <div class="col-md-5">
+                            <label class="control-label" for="email">Email</label>
+                            <input type="text" class="form-control" name="email" placeholder="Ex: milton.nascimento@webrhino.com.br" />
+                        </div>
+                    </div><br/>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <label class="control-label" for="passwd">Senha</label>
+                            <input type="password" class="form-control" name="passwd"/>
+                        </div>
+                        <div class="col-md-5">
+                            <label class="control-label" for="passwdchk">Confirmar Senha</label>
+                            <input type="password" class="form-control" name="passwdchk"/>
+                        </div>
+                    </div><br/>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <label class="control-label" for="role">Nível de Acesso</label>
+                            <select class="form-control" name="role">
+                            [% FOREACH role IN roles %]
+                                [% IF loop.first %]
+                                <option value="[% role.roleid %]" selected>[% role.role %]</option>
+                                [% ELSE %]
+                                <option value="[% role.roleid %]">[% role.role %]</option>
+                                [% END %]
+                            [% END %]
+                        </select>
+                        </div>
+                    </div><br/>
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-5">
+                            <input type="submit" class="btn btn-sm btn-default pull-right" value="Criar Usuário" />
+                        </div>
+                    </div>
+                </form>
+        </div>   
+
+    </div>
+</body>
+</html>

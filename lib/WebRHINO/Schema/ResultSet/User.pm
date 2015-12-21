@@ -20,19 +20,16 @@ sub new_user {
     my ( $self, $user_params ) = @_;
     
     my @roles;
-    my $first_name   = $& if $user_params->{ username } =~ m/^\w+/;
-    my $last_name    = $' if $user_params->{ username } =~ m/\.+/;
     
     my $user = $self->create({
-        first_name   => $first_name,
-        last_name    => $last_name,
+        name         => $user_params->{ first_name },
+        last_name    => $user_params->{ last_name },
         username     => $user_params->{ username },
-        email        => "$user_params->{username}\@morpho.com",
+        email        => $user_params->{ email },
         password     => $user_params->{ password },
     });
     
-    if ( $user_params->{ role } == 2 ) { @roles = qw/ 1 2 /; }
-    elsif ( $user_params->{ role } == 9 ) { @roles = qw/ 1 2 9 /; }
+    if ( $user_params->{ role } == 2 ) { @roles = qw/ 1 9 /; }
     else { @roles = qw/ 1 /; }
     
     for my $role ( @roles ){
