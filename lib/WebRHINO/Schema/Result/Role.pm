@@ -38,11 +38,10 @@ __PACKAGE__->table("role");
 
 =head1 ACCESSORS
 
-=head2 rid
+=head2 roleid
 
   data_type: 'integer'
   extra: {unsigned => 1}
-  is_auto_increment: 1
   is_nullable: 0
 
 =head2 role
@@ -54,13 +53,8 @@ __PACKAGE__->table("role");
 =cut
 
 __PACKAGE__->add_columns(
-  "rid",
-  {
-    data_type => "integer",
-    extra => { unsigned => 1 },
-    is_auto_increment => 1,
-    is_nullable => 0,
-  },
+  "roleid",
+  { data_type => "integer", extra => { unsigned => 1 }, is_nullable => 0 },
   "role",
   { data_type => "varchar", is_nullable => 0, size => 25 },
 );
@@ -69,13 +63,13 @@ __PACKAGE__->add_columns(
 
 =over 4
 
-=item * L</rid>
+=item * L</roleid>
 
 =back
 
 =cut
 
-__PACKAGE__->set_primary_key("rid");
+__PACKAGE__->set_primary_key("roleid");
 
 =head1 RELATIONS
 
@@ -90,23 +84,23 @@ Related object: L<WebRHINO::Schema::Result::UserRole>
 __PACKAGE__->has_many(
   "user_roles",
   "WebRHINO::Schema::Result::UserRole",
-  { "foreign.rid" => "self.rid" },
+  { "foreign.role_id" => "self.roleid" },
   { cascade_copy => 0, cascade_delete => 0 },
 );
 
-=head2 uids
+=head2 users
 
 Type: many_to_many
 
-Composing rels: L</user_roles> -> uid
+Composing rels: L</user_roles> -> user
 
 =cut
 
-__PACKAGE__->many_to_many("uids", "user_roles", "uid");
+__PACKAGE__->many_to_many("users", "user_roles", "user");
 
 
-# Created by DBIx::Class::Schema::Loader v0.07043 @ 2015-11-16 17:25:00
-# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:SbD8n0/hIXqRnkK13vToeg
+# Created by DBIx::Class::Schema::Loader v0.07043 @ 2015-12-17 17:38:58
+# DO NOT MODIFY THIS OR ANYTHING ABOVE! md5sum:C5gdXkpYR8yVNqHPzhZ/XQ
 
 
 # You can replace this text with custom code or comments, and it will be preserved on regeneration
