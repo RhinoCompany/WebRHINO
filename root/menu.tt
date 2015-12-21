@@ -12,8 +12,38 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuários<span class="caret"></span></a>
             <ul class="dropdown-menu">
             <li><a href="/admin/user/add">Novo</a></li>
+            <li><a href="/admin/user/add">Ver todos</a></li>
             </ul>
         </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Funcionários<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Novo</a></li>
+                <li><a href="#">Ver todos</a></li>
+                <li><a href="#">Férias e Licenças</a></li>
+                <li><a href="#">Afastamento</a></li>
+                <li><a href="#">Admissão / Demissão</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Áreas<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Ver todas</a></li>
+                <li><a href="#">Centros de Custo</a></li>
+                <li><a href="#">Solicitação de Material</a></li>
+                <li><a href="#">Transferência</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Boletins<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Palestras</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Vagas Internas</a></li>
+            </ul>
+        </li>
+        <li><a href="#"> Perguntas e Sugestões <span class="badge">14 </span></a></li>
         [% ELSE %]
            <li><a href="/login/signup">Entrar</a></li>
 	[% END %]

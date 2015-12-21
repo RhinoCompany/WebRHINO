@@ -87,6 +87,12 @@ sub index_POST {
     });
 }
 
+sub news :Local :Args(0) {
+    my ( $self, $c ) = @_;
+
+    $c->stash({ template => 'news.tt' });
+}
+
 sub logout :Local :Args(0) {
     my ($self, $c) = @_;
 

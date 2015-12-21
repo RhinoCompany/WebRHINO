@@ -29,7 +29,7 @@ sub new_user {
         password     => $user_params->{ password },
     });
     
-    if ( $user_params->{ role } == 2 ) { @roles = qw/ 1 9 /; }
+    if ( $user_params->{ role } == 9 ) { @roles = qw/ 1 9 /; }
     else { @roles = qw/ 1 /; }
     
     for my $role ( @roles ){
