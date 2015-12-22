@@ -1,7 +1,8 @@
 <div class="row row-offcanvas row-offcanvas-right">
 <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Perfil <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="/">Inicio <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Perfil</a></li>
             <li><a href="#">Férias</a></li>
             <li><a href="#">Faltas</a></li>
             <li><a href="#">Benefícios</a></li>
