@@ -7,7 +7,7 @@
     [% INCLUDE menu.tt %]
     <div class="container">
         [% INCLUDE sidemenu.tt %]
-        <div class="col-sm-6 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <div class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-1 main">
             <p class="pull-right visible-xs">
               <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Menu</button>
             </p>
@@ -16,7 +16,7 @@
 
                     <div class="blog-post">
                         <h2 class="blog-post-title">Novo composto de madeira para móveis de áreas externas</h2>
-                        <p class="blog-post-meta">21 Dezembro, 2015 por <a href="#">Marcos - RH</a></p>
+                        <p class="blog-post-meta">21 de Dezembro, 2015 por <a href="#">Marcos - RH</a></p>
 
                         <p>Os polímeros a base de madeira (WPCs na sigla em inglês) poupam recursos e são uma das tendências mais recentes de material para móveis de jardim e outros usos externos, especialmente piso de varandas, fachadas e cercas. Como parte do programa LIMWOOD, financiado pela União Europeia, pesquisadores do Instituto Fraunhofer (Wilhelm-Klauditz-Institut ou WKI) de pesquisas em madeira estão colaborando com parceiros na indústria em países como Bélgica, Espanha, França e Alemanha para desenvolver materiais que possam ser prensados em tábuas de compensado resistentes à água para a confecção de móveis para interiores.</p>
                         <hr>
@@ -48,8 +48,8 @@
 
                     <nav>
                     <ul class="pager">
-                    <li><a href="#">Próximo</a></li>
                     <li><a href="#">Anterior</a></li>
+                    <li><a href="#">Próximo</a></li>
                     </ul>
                     </nav>
 

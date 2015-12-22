@@ -92,16 +92,16 @@ sub add_POST {
 
             $user_rs->new_user( $arguments );
 
-            $c->stash->{ success } = "Usuário criado com sucesso!";
+            $c->stash->{ success } = "Usuario criado com sucesso!";
         }
         else {
             $c->response->code(406);
-            $c->stash->{ error } = "As senhas não coincidem. Favor tentar novamente.";
+            $c->stash->{ error } = "As senhas nao coincidem. Favor tentar novamente.";
         }
     }
     else {
         $c->response->code(406);
-        $c->stash->{ error } = "O usuário já está cadastrado. Favor checar e tentar novamente.";
+        $c->stash->{ error } = "O usuario ja esta cadastrado. Favor checar e tentar novamente.";
     }
 
     my @roles = $role_rs->all();
