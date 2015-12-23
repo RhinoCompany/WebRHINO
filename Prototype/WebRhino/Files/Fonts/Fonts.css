@@ -1,0 +1,27 @@
+@font-face {
+font-family: "Aclonica";
+src: url("Aclonica.eot") format("eot"); /* IE9 Compat Modes */
+src: url("Aclonica.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+     url("Aclonica.woff") format("woff"), /* Modern Browsers */
+     url("Aclonica.ttf") format("truetype"); /* Safari, Android, iOS */
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "Calibri";
+src: url("Calibri.eot") format("eot"); /* IE9 Compat Modes */
+src: url("Calibri.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+     url("Calibri.woff") format("woff"), /* Modern Browsers */
+     url("Calibri.ttf") format("truetype"); /* Safari, Android, iOS */
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: "Special Elite";
+src: url("Special Elite.eot") format("eot"); /* IE9 Compat Modes */
+src: url("Special Elite.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+     url("Special Elite.woff") format("woff"), /* Modern Browsers */
+     url("Special Elite.ttf") format("truetype"); /* Safari, Android, iOS */
+font-weight: normal;
+font-style: normal;
+}
